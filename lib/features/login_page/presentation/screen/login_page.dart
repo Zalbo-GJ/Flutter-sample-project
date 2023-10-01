@@ -62,7 +62,7 @@ class LoginPage extends StatelessWidget {
                   ),
                 )),
             floatingActionButton: Container(
-              height: 100,
+              height: MediaQuery.of(context).size.height * (1 / 7),
               child: Column(
                 children: [
                   Row(
@@ -70,7 +70,6 @@ class LoginPage extends StatelessWidget {
                     children: [
                       GestureDetector(
                         onTap: () {
-                          // signinWithGoogle();
                         },
                         child: const Text(
                           "Find e-mail",
