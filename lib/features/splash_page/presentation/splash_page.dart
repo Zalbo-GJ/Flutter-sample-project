@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 
 class Splash extends StatelessWidget {
@@ -6,6 +8,9 @@ class Splash extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Future.delayed(Duration(seconds: 1), () {
+      Get.offAllNamed('/login');
+    });
     return const Scaffold(
       body: Center(
         child: Image(
